@@ -23303,3 +23303,24 @@ Sidebar
     border-radius: 18px;
   }
 }
+/* ক্যানভাস পুরো Hero-র উপরে এবং কন্টেন্টের নিচে থাকবে */
+.hero-particles {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+  pointer-events: auto;
+  opacity: 0.85; /* ব্যাকগ্রাউন্ডের সাথে সুন্দরভাবে ব্লেন্ড হওয়ার জন্য */
+}
+
+/* কন্টেন্ট এবং ড্যাশবোর্ড ইমেজ পার্টিকেলের উপরে ক্লিকযোগ্য থাকবে */
+.hero-wrapper.hero-2 .auto-container {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.hero-wrapper.hero-2 .shape {
+  z-index: 0 !important;
+}
